@@ -25,3 +25,14 @@ const cook = new Job("Cook", "Malaysia", 75000);
 
 developer.describe();
 cook.describe();
+
+//Array Destructuring
+const fullName = ["Azie", "Melza", "Pratama"];
+const [firstName, middleName, lastName] = fullName;
+
+//Object Destructuring
+const { title: jTitle, location: jLocation, salary: jSalary } = developer;
+
+console.log(jTitle);
+console.log(jLocation);
+console.log(jSalary);
