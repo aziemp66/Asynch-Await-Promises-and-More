@@ -2,8 +2,19 @@ function greetUser(greetingPrefix = "Hello There!", userName = "user") {
     console.log(greetingPrefix + " " + userName + "!");
 }
 
-function sumUp(num1 = 0, num2 = 0, num3 = 0) {
-    return num1 + num2 + num3;
+console.log(sumUp(1, 2));
+
+function sumUp(...numbers) {
+    let result = 0;
+
+    for (const number of numbers) {
+        result += number;
+    }
+    return result;
 }
 
-console.log(sumUp(1, 2));
+console.log(sumUp(3, 4, 5, 6, 2, 4, 4, 1));
+
+const inputNumbers = [1, 3, 5, 7, 8, 9];
+
+console.log(sumUp(...inputNumbers));
