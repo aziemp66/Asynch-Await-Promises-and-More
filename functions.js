@@ -1,8 +1,9 @@
 function greetUser(greetingPrefix = "Hello There!", userName = "user") {
-    console.log(greetingPrefix + " " + userName + "!");
+    /* console.log(greetingPrefix + " " + userName + "!"); */
+    console.log(`${greetingPrefix} ${userName}!`);
 }
 
-console.log(sumUp(1, 2));
+greetUser("Hi", "Azie");
 
 function sumUp(...numbers) {
     let result = 0;
