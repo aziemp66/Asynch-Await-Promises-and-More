@@ -9,4 +9,5 @@ function readFile() {
 
     console.log("Hi There!");
 }
+
 readFile();
